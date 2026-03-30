@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/api/ncaa/:path*",
+      "destination": "https://ncaa-api.henrygd.me/:path*"
+    }
+  ]
+}
