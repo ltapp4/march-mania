@@ -286,7 +286,9 @@ function calculateOwnerStandings(owners, games) {
       (team) => !team.isWinner && !team.isPlaceholder && team.teamKey
     )
 
-    if (winner?.teamKey) {
+    // First Four games are displayed in the bracket, but they do not count as
+    // paid wins in the pool totals.
+    if (winner?.teamKey && game.sectionId !== 1) {
       winsByTeam.set(winner.teamKey, (winsByTeam.get(winner.teamKey) || 0) + 1)
     }
 
