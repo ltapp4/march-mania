@@ -36,13 +36,9 @@
         <span class="owner-card__label">Bonus</span>
         <strong>{{ formatMoney(owner.bonusMoney) }}</strong>
       </div>
-      <div class="owner-card__stat">
+      <div class="owner-card__stat owner-card__stat--expense">
         <span class="owner-card__label">Entry</span>
-        <strong>{{ formatMoney(owner.entryFees) }}</strong>
-      </div>
-      <div class="owner-card__stat">
-        <span class="owner-card__label">Pot</span>
-        <strong>{{ formatMoney(owner.potContribution) }}</strong>
+        <strong>-{{ formatMoney(owner.entryFees) }}</strong>
       </div>
       <div class="owner-card__stat" :class="netClass">
         <span class="owner-card__label">Net</span>
@@ -164,6 +160,10 @@ const netClass = computed(() =>
 }
 
 .owner-card__stat--negative strong {
+  color: #ff9b92;
+}
+
+.owner-card__stat--expense strong {
   color: #ff9b92;
 }
 
