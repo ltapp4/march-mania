@@ -51,7 +51,7 @@ const GAME_DATE_TIME_FORMATTER = new Intl.DateTimeFormat('en-US', {
 export const PAYOUT_RULES = {
   entryFeePerTeam: 7,
   championshipPotPerTeam: 2,
-  winValue: 3,
+  winValue: 5,
   finalFourLossBonus: 7,
   runnerUpBonus: 14,
   championBonus: 100,

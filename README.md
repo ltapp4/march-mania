@@ -17,7 +17,7 @@ It pulls the current NCAA tournament bracket, maps teams to owners from `owners.
 
 - Each team costs `$7`
 - `$2` per team goes into the championship pot
-- Each game win pays back `$3`
+- Each game win pays back `$5`
 - Final Four losers get `$7`
 - Runner-up gets `$14`
 - Champion gets `$100`
